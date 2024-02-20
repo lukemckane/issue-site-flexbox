@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+p {
+	margin-block-start: 0;
+    margin-block-end: 0;	
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.head {
+	display: flex;
+	height: 33vh;
+	background-color: #c0362c;
+	border-color: black;
+	border-style: solid;
+	border-width: 5px;
+	border-top-style: none;
+	border-radius: 0px 0px 3vmin 3vmin;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5vw;
+	background-image: url('ggbSunset.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.home {
+	display: flex;
+	height: 67vh;
+#	background-color: lightblue;
+	padding: 1vmin;
+#	gap: 2vmin;
+}
+
+.home-left {
+	display: flex;
+	width: 50vw;
+#	background-color: hotpink;
+	flex-direction: column;
+	margin: 1vmin;
+	gap: 2vmin;
+}
+
+.home-links {
+	display: flex;
+	width: 50vw;
+	height: 50%;
+	background-color: #c0362c;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vw;
+	position: relative;
+}
+
+.home-right {
+	display: flex;
+	flex-grow: 1;
+	background-color: green;
+	background-image: url('homeless.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 1vmin;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+}
+
+.navbar {
+	display: flex;
+	height: 8.25vh;
+	justify-content: space-evenly;
+	background-color: #c0362c;
+	border-color: black;
+	border-bottom-style: solid;
+	border-width: 0.5vmin;
+	padding: 1vmin;
+	position: relative;
+#	border-radius: 0px 0px 3vmin 3vmin;
+}
+
+.nav-link {
+	display: flex;
+	width: 30vw;
+	color: black;
+	background-color: #c0362c;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+	justify-content: center;
+	align-items: center;
+	transition: .5s ease;
+	position: relative;
+}
+
+#on-causes {
+	color: white;
+	border-color: white;
+}
+
+#off-causes {}
+
+#on-resources {
+	color: white;
+	border-color: white;
+}
+
+#off-resources {}
+
+#home {}
+
+.secondary-body {
+	display: flex;
+	height: 91.75vh;
+	background-color: lightblue;
+	padding: 1vmin;
+}
+
+.secondary-left {
+	display: flex;
+#	flex-grow: 1;
+	width: 33vw;
+	color: black;
+	background-color: #c0362c;
+	margin: 1vmin;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+	flex-direction: column;
+	padding: 1vmin;
+}
+
+.secondary-right {
+	display: flex;
+#	flex-grow: 1;
+	width: 67vw;
+#	background-color: green;
+	flex-direction: column;
+	margin: 1vmin;
+	gap: 2vmin;
+	overflow: auto;
+}
+
+.info {
+	display: flex;
+	color: white;
+	background-color: #c0362c;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+	padding: 1vmin;
+	position: relative;
+}
+
+.info-undercover {
+	position: absolute;
+	display: flex;
+	background-color: #c0362c;
+	border-radius: 2vmin;
+#	border-color: black;
+#	border-style: solid;
+	border-width: 0.5vmin;
+	background-color: ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.info:hover .info-undercover{
+	visibility: visible;
+	z-index: -1;
+	color: black;
+}
+
+#home:hover {
+	color: white;
+	border-color: white;
+}
+
+#off-causes:hover {
+	color: white;
+	border-color: white;
+}
+
+#off-resources:hover {
+	color: white;
+	border-color: white;
+}
+
+#causes-home {
+	color: black;
+	border-color: black;
+}
+
+#causes-home:hover {
+	color: white;
+	border-color: white;
+}
+
+#resources-home {
+	color: black;
+	border-color: black;
+}
+
+#resources-home:hover {
+	color: white;
+	border-color: white;
+}
+
+.link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+.resources {
+	display: flex;
+	flex-flow: column;
+	color: white;
+	background-color: #c0362c;
+	border-radius: 2vmin;
+	border-color: black;
+	border-style: solid;
+	border-width: 0.5vmin;
+	padding: 1vmin;
+	position: relative;
+	flex-grow: 1;
+}
